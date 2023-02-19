@@ -1,4 +1,4 @@
-from classes import gusano, manzana
+from clases import gusano, manzana
 from threading import Thread,Timer
 from os import system
 from msvcrt import kbhit, getwche

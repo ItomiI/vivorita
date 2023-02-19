@@ -73,6 +73,7 @@ def start():  # mando esto cuando empieza el programa
     manzanita.posicionar(elMapa)  # posiciono la manzana
 
 def update():  # muchas cosas | se repite todo el tiempo
+    global tDefault
     global letra
     global elMapa
     global puntos
@@ -151,9 +152,9 @@ def update():  # muchas cosas | se repite todo el tiempo
 
         wasX = toX#guardo esto para la info
         wasY = toY
-        tiempoHastaMover = 0.3 # reinicio el tiempo de momento de mover
+        tiempoHastaMover = tDefault # reinicio el tiempo de momento de mover
 
-    Timer(1/60, update).start()  # que se repita todo
+    Timer(1/100, update).start()  # que se repita todo
 
 
 start()

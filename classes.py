@@ -155,7 +155,7 @@ class manzana:
     def repos(self, mat: list[list]):
         x = randrange(0, self.mx)  # nuevo x
         y = randrange(0, self.my)  # nuevo y
-        while mat[x][y] != "|-|":  # por si la pos esta usada por un G o
+        while mat[x][y] != "|-|":  # por si la pos esta usada por un G o C
             x = randrange(0, self.mx)  # nuevo x
             y = randrange(0, self.my)  # nuevo y
         self.pos.tp(x, y)  # la nueva pos
